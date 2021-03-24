@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class JavaLibs5026201010 {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+//name
+        System.out.println("Type your name");
+        String name = scan.nextLine();
+//age
+        System.out.println("when were you born (year only (yyyy)) ?");
+        int year_of_birth = scan.nextInt();
+        int age = 2021 - year_of_birth;
+        scan.nextLine();
+//hobbies
+        System.out.println("what do you do usually everyday ?");
+        String hobbies = scan.nextLine();
+//shoe size
+        System.out.println("what your shoe size ?");
+        double shoesize = scan.nextDouble();
+        double shoesizenow = 1.5 + shoesize;
+        scan.nextLine();
+//activity during quarantine
+        System.out.println("what your activity during quarantine ?");
+        String activity = scan.nextLine();
+//who are you doing it with
+        System.out.println("who are you doing it with ?");
+        String Person = scan.nextLine();
+//money spend
+        System.out.println("how much money do you spend monthly during quarantine ?");
+        double moneyspend = scan.nextDouble();
+        scan.nextLine();
+//disscount
+        System.out.println("what your favorite numbere (10-90) ?");
+        int disscount = scan.nextInt();
+        scan.nextLine();
+//spend after discount
+        double moneyspendaftediscount = moneyspend * (100 - disscount ) / 100;
+//ecommerce
+        System.out.println("what your favorite ecommerce to use ?");
+        String ecommercelol = scan.nextLine();
+//something to buy
+        System.out.println("What you like to buy at eccomerce ?");
+        String something = scan.nextLine();
+
+//story time
+        System.out.println(" hello word my name is " + name + "." + "and i am " + age + " years old.i usually fill my day by " + hobbies + "." + " i like to collects some snicker. " + " my shoe size is " + shoesize + ".");
+        System.out.println(" but because i like to do some workout when quarantine my shoe size now become " + shoesizenow + " . " + " During quarantine i like to do some activity such as " + activity + " with my " + Person + " . ");
+        System.out.println(" When quarantine i like to spend money about " + moneyspend + " $. ecommerce that i usually use is " + ecommercelol + " . i like to buy some " + something + " . ");
+        System.out.println(" because there is so many disscount event during quarantine i can spend less money from about " + moneyspend + " to " + moneyspendaftediscount + ".");
+        System.out.println("THE END");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
