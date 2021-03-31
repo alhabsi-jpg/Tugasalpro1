@@ -1,0 +1,8 @@
+public class TestClass5026201010 {
+    public static void main(String[] args) {
+        ComputeMethods5026201010 akuaku = new ComputeMethods5026201010();
+        System.out.println("Temp in celsius is " + akuaku.fToC(50));
+        System.out.println("Hypotenuse is " + akuaku.hypotenuse(3,4));
+        System.out.println("The sum of the dice values is " + akuaku.roll());
+    }
+}
