@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class RockPaperScissor {
+    public String player;
+    public String botChoice;
+    public void botPlay() {
+        double bot = Math.random();
+        if (bot < 0.33) {
+            botChoice = "rock";
+        } else if (bot >= 0.33 && bot <= 0.66) {
+            botChoice = "scissor";
+        } else {
+            botChoice = "paper";
+        }
+        System.out.println("Bot choose " + botChoice);
+    }
+        public void playerPlay() {
+        System.out.println("choose rock,scissor,or paper");
+        Scanner userInput = new Scanner(System.in);
+        player = userInput.nextLine();
+        System.out.println("Player choose " + player.toLowerCase());
+    }
+    public void duel(){
+        if(player.equalsIgnoreCase(botChoice)){
+            System.out.println("Draw!");
+        }
+        else if (player.equalsIgnoreCase("paper")  && botChoice.equals("scissor")){
+            System.out.println("Bot Wins!");
+        }
+        else if (player.equalsIgnoreCase("paper") && botChoice.equals("rock")){
+            System.out.println("Player Wins!");
+        }
+        else if(player.equalsIgnoreCase("scissor") && botChoice.equals("paper")){
+            System.out.println("Player Wins!");
+        }
+        else if(player.equalsIgnoreCase("scissor") && botChoice.equals("rock")){
+            System.out.println("Bot Wins!");
+        }
+        else if(player.equalsIgnoreCase("rock") && botChoice.equals("paper")){
+            System.out.println("Bot Wins!");
+        }
+        else if(player.equalsIgnoreCase("rock") && botChoice.equals("scissor")){
+            System.out.println("Player Wins!");
+        }
+
+    }
+}
