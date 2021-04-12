@@ -1,0 +1,12 @@
+import com.company.RockPaperScissor;
+
+public class Main {
+
+    public static void main(String[] args) {
+        RockPaperScissor game = new RockPaperScissor();
+        game.playerPlay();
+        game.botPlay();
+        game.duel();
+
+        }
+}
